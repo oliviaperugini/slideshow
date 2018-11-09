@@ -6,21 +6,6 @@ import './custom.css'
 import Editor, { createEditorStateWithText, createWithContent } from 'draft-js-plugins-editor'
 import {EditorState, ContentState, getDefaultKeyBinding, KeyBindingUtil, convertToRaw, convertFromRaw} from 'draft-js'
 
-import {
-  ItalicButton,
-  BoldButton,
-  UnderlineButton,
-  CodeButton,
-  HeadlineOneButton,
-  HeadlineTwoButton,
-  HeadlineThreeButton,
-  UnorderedListButton,
-  OrderedListButton,
-  BlockquoteButton,
-  CodeBlockButton
-} from 'draft-js-buttons'
-
-
 const {hasCommandModifier} = KeyBindingUtil
 
 export default class Workspace extends Component {

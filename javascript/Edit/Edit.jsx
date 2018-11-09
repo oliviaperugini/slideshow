@@ -3,7 +3,11 @@ import React, { Component } from 'react'
 import EditView from './EditView.jsx'
 import NavBar from './NavBar.jsx'
 import SlidesView from './SlidesView.jsx'
+<<<<<<< Updated upstream
 import Show from '../Resources/Show.js'
+=======
+import ToolBar from './ToolBar.jsx'
+>>>>>>> Stashed changes
 
 export default class Edit extends Component {
   constructor() {
@@ -205,13 +209,20 @@ export default class Edit extends Component {
   render() {
     return (
       <div>
-        <NavBar
-          save={this.save}
-          insertSlide={this.addNewSlide}
-          deleteSlide={this.deleteCurrentSlide}
-          renameSlide={this.renameCurrentSlide}
-          addToStack ={this.addToStack}
-          currentSlide={this.state.currentSlide}/>
+        <div className="row">
+          <div>
+            <NavBar
+              save={this.save}
+              insertSlide={this.addNewSlide}
+              deleteSlide={this.deleteCurrentSlide}
+              renameSlide={this.renameCurrentSlide}
+              addToStack ={this.addToStack}
+              currentSlide={this.state.currentSlide}/>
+          </div>
+          <div className="offset-md-1">
+            <ToolBar />
+          </div>
+        </div>
         <div className="row">
           <SlidesView
             slides          ={this.state.content}

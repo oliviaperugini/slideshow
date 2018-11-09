@@ -2,8 +2,9 @@
 import React, {Component} from 'react'
 import PropTypes from 'prop-types'
 import Workspace from './Workspace.jsx'
+//import ToolBar from './ToolBar.jsx'
 
-import {
+/*import {
   ItalicButton,
   BoldButton,
   UnderlineButton,
@@ -17,7 +18,7 @@ import {
   CodeBlockButton
 } from 'draft-js-buttons'
 
-import createToolbarPlugin, { Separator } from 'draft-js-static-toolbar-plugin'
+//import createToolbarPlugin, { Separator } from 'draft-js-static-toolbar-plugin'
 import 'draft-js-static-toolbar-plugin/lib/plugin.css'
 
 const staticToolbar = createToolbarPlugin({
@@ -42,7 +43,11 @@ const { Toolbar } = staticToolbar
 
 const plugins = [
   staticToolbar,
-]
+]*/
+
+
+
+
 
 export default class EditView extends Component {
 
@@ -50,7 +55,7 @@ export default class EditView extends Component {
     super(props)
     this.state = {
       activeIndex: props.currentSlide,
-      toolBarActive: false,
+      //toolBarActive: false,
       hasFocus: false,
     }
   }
@@ -89,7 +94,7 @@ export default class EditView extends Component {
     return (
       <div className="col-8" >
         <p></p>
-        <Toolbar />
+
         <span><br /></span>
         <div className="jumbotron">
           {data}
